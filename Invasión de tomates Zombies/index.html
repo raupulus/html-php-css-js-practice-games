@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//ES" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+	<HEAD>
+		<TITLE>Videojuego</TITLE>
+		
+		<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<STYLE type="text/css">
+			* {
+				margin:0;
+				padding:0;
+				}
+			#titulo {
+				position:relative;
+				width:100%;
+				height:90px;
+				background-color:white;
+				text-align:center;
+				vertical-align:middle;
+				}
+			#cajainferior {
+				width: 100%;
+				background-color: blue;
+				color: white;
+				}
+			#cajavideojuego {
+				width:100%;
+				height:100%;
+				margin:0;
+				background-color:white;
+				color:white;
+				overlay:hidden;
+				}
+			#titulojuego {
+				position:relative;
+				margin:auto;
+				width:800px;
+				background-color:black;
+				border:3px solid red;
+				height: 22px;
+				}
+			.estadisticas {
+				position:relative;
+				float:left;
+				margin-left:20px;
+				width:150px;
+				height: 22px;
+				vertical-align: middle;
+				}	
+			
+			#juego {
+				color:blue;
+				background-color:white;
+				
+				/*min-width:600px;
+				max-width:800px;
+				min-height:300px;
+				max-height:600px;*/
+				text-align:center;
+				vertical-align:middle;
+				image-repeat:no-repeat;
+				image-size:100%;
+				}
+			#imagejuego {
+				width:800px;
+				
+				}
+			#pepino {
+				position:absolute;
+				z-index:10;
+				margin-top: 210px;
+				margin-left: 340px;
+				}
+			#tomate1 {
+				position:absolute;
+				margin-left: 90px;
+				}
+			#tomate2 {
+				position:absolute;
+				margin-left: 340px;
+				}
+				
+/*estilos generales*/
+			H1 {
+				 text-shadow:2px 2px 5px red;
+				 }
+			H3 {
+				color:red;
+				 text-shadow:2px 2px 5px black;
+		</STYLE>
+		
+		<SCRIPT type="text/javascript">
+			pepino = document.getElementById('pepino') 
+			x = 10
+			y = 10
+			estapulsado = window.keypress //Event.keyCode
+			
+			
+			/*function mover()
+			{
+				var teclapulsada = event.keyCode
+				alert()
+				//var teclapulsada = document.onkeydown.keyCode;
+				switch (teclapulsada)
+				{
+					//Derecha
+					case 39:
+2						alert("hola");
+					break;
+						x=20;
+						document.getElementById("pepino").style.right= String(x) + "px";
+					break;
+					case 37:
+						x-=20;
+						document.getElementById("pepino").style.left= String(x) + "px";
+					break;
+				}
+			}*/
+			
+			
+			function mover () {
+					var tecla = event.keyCode;
+					var xmas = 10
+					var xmen = -20
+					var position = document.getElementById("pepino").style.right
+					
+					switch (tecla) {
+						case 39:
+							document.getElementById("pepino").style.right = position + xmas + "px";
+						break;
+							
+						case 37:
+							document.getElementById("pepino").style.left = position + xmen + "px";
+						break;
+						}	
+				
+					}
+				window.onkeydown = mover
+			
+			
+		/*	function pepinodrh (){
+				var movimientodrh = pepino + x
+				onkeypress = movimientodrh
+				}*/
+			
+			document.onkeydown = mover()
+		</SCRIPT>
+	</HEAD>
+
+	<BODY>
+<!--Título-->
+		<DIV id= "titulo">
+			<H1>Invasión de tomate zombies</H1>
+			<H3>Impide que los tomates lleguen a ti: Rebientalos a todos</H3>
+		</DIV> <!--Fin de Título-->
+		
+<!--Caja de videojuego-->			
+		<DIV  id="cajavideojuego">
+			<DIV id="titulojuego">
+				<DIV  id="puntuacion"  class="estadisticas">
+					Puntuación:
+				</DIV>
+				
+				<DIV  id="vida"  class="estadisticas">
+					Vida:
+				</DIV>
+			</DIV><!--Fin de titulojuego-->
+			
+			<DIV id="juego" onkeypress="pepinodrh();">
+				<IMG id="pepino" alt="pepino" src="./images/pistola.png">
+				<IMG id="tomate1" alt="tomate1" src="./images/tomate1.png">
+				<IMG id="tomate2" alt="tomate2" src="./images/tomate2.png">
+				<IMG id="imagejuego" alt="videojuego" src="./images/fondo.png">
+			</DIV>
+		</DIV> <!-- Fin de caja videojuego-->
+
+<!-- caja inferior-->
+		<DIV  id="cajainferior">
+			Instrucciones del vídeojuego:
+		</DIV><!--Fin de caja inferior-->
+		
+	</BODY>
+</HTML>

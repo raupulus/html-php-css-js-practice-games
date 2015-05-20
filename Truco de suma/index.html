@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//ES" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+	<HEAD>
+		<TITLE>Titulo de la página</TITLE>
+		
+		<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<STYLE type="text/css">
+			#cajaresuelto {
+				width: 100%;
+				height: 90px;
+				background-color: orange;
+				vertical-align: middle;
+				}
+		</STYLE>
+		
+		<SCRIPT type="text/javascript">
+			function resuelto() {
+				var numerocifra = document.getElementById('numerocifra').value;
+				var multiplodenueve = document.getElementById('multiplodenueve').value;
+				//var b = document.getElementById('b').value;
+				var resultado_a = numerocifra * 10;
+				var resultado_b = resultado_a - multiplodenueve;
+				var resultado_c = resultado_b + "   A los dos números de la Izquierda se le suma el ultimo número de la Derecha (si solo son dos digitos simplemente súmalos) NOS DARÁ COMO RESULTADO: " + numerocifra;
+				document.getElementById('muestraresultado').defaultValue = resultado_c;
+			}
+		</SCRIPT>
+	</HEAD>
+
+	<BODY>
+		<DIV>
+			1 - Introduce un número de dos cifras:
+			<INPUT id="numerocifra" name="numerocifra1" type="text" size="3" maxlength="2">
+			<BR>
+			2 - Escoge cualquier número de la tabla del 9: 
+			<SELECT id="multiplodenueve">
+				<OPTION id="a">9</OPTION>
+				<OPTION id="b">18</OPTION>
+				<OPTION id="c">27</OPTION>
+				<OPTION id="d">36</OPTION>
+				<OPTION id="e">45</OPTION>
+				<OPTION id="f">54</OPTION>
+				<OPTION id="g">63</OPTION>
+				<OPTION id="h">72</OPTION>
+				<OPTION id="i">81</OPTION>
+			</SELECT>	
+			<BR>
+			<INPUT id="resuelto" name="resolver" type="button" value="Resolver" size="3" maxlength="1" OnClick="resuelto()">
+		</DIV>
+		
+		<DIV id="cajaresuelto">
+			Aquí aparecerá el resultado: <Textarea id="muestraresultado" rows="4" cols="80"> </Textarea>
+		</DIV>
+		<DIV>
+			Como se ha hecho el juego:
+			<BR>
+			Se pide a un amigo que escriba, sin mostrarlo, un número de dos dígitos (por ejemplo, 45).
+			<BR>
+			A continuación se le indica que agregue un cero a la derecha (450) y que reste a esa cifra cualquier número de la tabla del 9 (9, 18, 27... 81), por ejemplo, 36
+			<BR>
+			Le pedimos que nos diga el resultado. Por ejemplo 414.
+			<BR>
+			Si a los dos dígitos de la izquierda (41) se suma el de la derecha (4), se obtiene el número secreto (45).
+			<BR>
+			Si el número resultante es solo de dos dígitos simplemente los sumamos entre ellos: 12*10= 120 ; 120-45= 75; Y AHORA: 7+5=12
+		</DIV>
+	</BODY>
+</HTML>
+
+				<!-- 
+Se pide a un amigo que escriba, sin mostrarlo, un número de dos dígitos (por ejemplo, 45).
+
+A continuación se le indica que agregue un cero a la derecha (450) y que reste a esa cifra cualquier número de la tabla del 9 (9, 18, 27... 81), por ejemplo, 36
+
+Le pedimos que nos diga el resultado. En el ejemplo 414.
+Si a los dos dígitos de la izquierda (41) se suma el de la derecha (4), se obtiene el número secreto (45).
+
+-->
