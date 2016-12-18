@@ -80,3 +80,21 @@ TABLE {
 	vertical-align: top;
 	border: 0;
 }
+
+#formulario1 {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+.boton {
+	margin: 0 20px;
+	width: 80px;
+	height: 30px;
+}
+
+#boton1 {
+	float: left;
+}
+#boton2 {
+	float: right;
+}
