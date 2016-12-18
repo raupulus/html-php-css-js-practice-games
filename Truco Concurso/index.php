@@ -18,6 +18,7 @@
 	<DIV class="ejemplo">
 		Solo tienes que participar y el coche puede ser tuyo:
 		<BR/>
+		<BR/>
 		<FORM name="concurso">
 			<INPUT type="button" name="concursar" value="Concursar" onClick="concursando()"/>
 		</FORM>
