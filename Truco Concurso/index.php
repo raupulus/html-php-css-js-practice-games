@@ -19,7 +19,7 @@
 		Solo tienes que participar y el coche puede ser tuyo:
 		<BR/>
 		<FORM name="concurso">
-			<INPUT type="button" name="concursar" value="Concursar"/>
+			<INPUT type="button" name="concursar" value="Concursar" onClick="concursando()"/>
 		</FORM>
 	</DIV>
 <?php
