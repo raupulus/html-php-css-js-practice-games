@@ -3,7 +3,7 @@
 <HEAD>
 	<TITLE>Concurso para Ganar un Coche</TITLE>
 	<META charset="utf-8"/>
-	<META name="description" content="Plantilla de Ejemplo"/>
+	<META name="description" content="Concurso"/>
 	<META name="keywords" content="concurso, coche, ganar, plantilla, programación, Raúl Caro Pastorino, Fryntiz"/>
 	<META name="author" content="Raúl Caro Pastorino"/>
 	<LINK rel="shortcut icon" href="./images/favicon.png"/>
