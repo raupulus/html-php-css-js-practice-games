@@ -34,6 +34,10 @@
 </HEAD>
 
 <BODY>
-
+	<DIV id="cajaPrincipal">
+		<DIV id="cajaSerpiente"></DIV>
+		<DIV id="cajaPuntuacion"></DIV>
+		<DIV id="cajaTiempo"></DIV>
+	</DIV>
 </BODY>
 </HTML>
