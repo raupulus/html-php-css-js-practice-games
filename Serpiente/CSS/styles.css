@@ -59,20 +59,26 @@ P {
 **************************/
 #cajaSerpiente {
 	margin: auto;
+	background-color: #493b4c;
+	border: 6px solid #c73935;
+	border-radius: 10px;
 }
 
 /*************************
-      cajaPuntuacion
+      cajaEstadisticas
 **************************/
+#cajaEstadisticas {
+	margin: auto;
+	padding: 5px 0;
+	text-align: center;
+}
 #cajaPuntuacion {
-	margin: auto;
+	display: inline-block;
+	background-color: #c73935;
 }
-
-/*************************
-      cajaTiempo
-**************************/
 #cajaTiempo {
-	margin: auto;
+	display: inline-block;
+	background-color: #c73935;
 }
 
 /*************************
