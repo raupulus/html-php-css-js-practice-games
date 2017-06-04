@@ -40,14 +40,24 @@ P {
        cajaSerpiente
 **************************/
 #cajaSerpiente {
-
+	width: 500px;
+	height: 500px;
 }
 
 /*************************
       cajaPuntuacion
 **************************/
 #cajaPuntuacion {
+	width: 100px;
+	height: 30px;
+}
 
+/*************************
+      cajaTiempo
+**************************/
+#cajaPuntuacion {
+	width: 100px;
+	height: 30px;
 }
 
 /*************************
