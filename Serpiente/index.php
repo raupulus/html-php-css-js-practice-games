@@ -36,8 +36,10 @@
 <BODY>
 	<DIV id="cajaPrincipal">
 		<DIV id="cajaSerpiente"></DIV>
-		<DIV id="cajaPuntuacion"></DIV>
-		<DIV id="cajaTiempo"></DIV>
+		<DIV id="cajaEstadisticas">
+			<DIV id="cajaPuntuacion"></DIV>
+			<DIV id="cajaTiempo"></DIV>
+		</DIV>
 	</DIV>
 
 	<FOOTER>Pie de página</FOOTER>
