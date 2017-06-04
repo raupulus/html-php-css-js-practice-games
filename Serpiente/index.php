@@ -30,12 +30,14 @@
 	<LINK href="CSS/medium.css" rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 980px)" />
 	<LINK href="CSS/mini.css" rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" />
 	<SCRIPT src="JS/scripts.js"></SCRIPT>
-	<SCRIPT src="JS/jquery.js"></SCRIPT>
 </HEAD>
 
-<BODY>
+<BODY onLoad="versionActual()">
 	<DIV id="cajaPrincipal">
-		<DIV id="cajaSerpiente"></DIV>
+		<DIV id="cajaSerpiente">
+			Este texto debe ser removido por array de cuadrados
+		</DIV>
+
 		<DIV id="cajaEstadisticas">
 			<DIV id="cajaPuntuacion"></DIV>
 			<DIV id="cajaTiempo"></DIV>
