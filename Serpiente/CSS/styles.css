@@ -63,6 +63,13 @@ P {
 	border: 6px solid #c73935;
 	border-radius: 10px;
 }
+.cuadricula{
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    float: left;
+}
 
 /*************************
       cajaEstadisticas
