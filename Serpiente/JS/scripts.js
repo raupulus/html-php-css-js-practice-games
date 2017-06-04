@@ -16,14 +16,14 @@ var sheriff = document.getElementsByClassName("cuadricula"); //Array con cada cu
 
 // Variable que crea un array de cuadros con los que controlar movimientos
 var cuadriculas = function() {
-	var x = " ";
+	var x = "";
 
 	for (var i=1; i<=10000; ++i) {
 		x = x + "<DIV class=\"cuadricula\" id=\"b" + i + " \" ></DIV>"
 	}
 
-	container.innerHTML = x;
-	oggy = sheriff[1];
+	document.getElementById("cajaSerpiente").innerHTML = 'asadasd';
+	//oggy = sheriff[1];
 };
 
 cuadriculas();
