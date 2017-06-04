@@ -39,5 +39,7 @@
 		<DIV id="cajaPuntuacion"></DIV>
 		<DIV id="cajaTiempo"></DIV>
 	</DIV>
+
+	<FOOTER>Pie de página</FOOTER>
 </BODY>
 </HTML>
